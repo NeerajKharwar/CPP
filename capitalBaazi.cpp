@@ -1,22 +1,27 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
-char upper(char c){
+char upper(char c)
+{
     return (c - 32);
 }
 
-int main(){
+int main()
+{
 
-    while(true){
+    while (true)
+    {
         string str;
-        cin>>str;
-        if(str.size()==0){
+        cin >> str;
+        if (str.size() == 0)
+        {
             break;
         }
-        for(int i=0;i<str.size(); ++i){
-            str[i]=upper(str[i]);
+        for (int i = 0; i < str.size(); ++i)
+        {
+            str[i] = upper(str[i]);
         }
 
-        cout<<str<<endl;
+        cout << str << endl;
     }
 }
